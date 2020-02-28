@@ -9,12 +9,38 @@
     <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
-    <h1>My Weather App</h1>
-    <p>{{name_ve}}</p>
-    <p>{{degree_ve}}</p>
-    <p>{{wind_ve}}</p>
-    <p>{{humidity_ve}}</p>
-    <p>{{pressure_ve}}</p>
+    <div class="container-fluid" style="background-color:#393939;">
+        <div>
+            <h1 style="color:#FFFFFF">My Weather App</h1>
+        </div>
+        <div class="row ">
+        <div class="container" style="width: 50%;">
+            <div class="w-25 mh-100">
+                <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
+            </div>
+            <div class="card-body" style="color:#FFFFFF">
+                <h3 class="card-title">{{name_ve}}</h3>
+                <p>Temperature {{degree_ve}} C</p>
+                <p>Wind {{wind_ve}}</p>
+                <p>Humidity {{humidity_ve}} %</p>
+                <p>Pressure {{pressure_ve}}</p>
+            </div>
+        </div>
+
+        <div class="container" style="width: 50%;">
+            <div class="w-25 mh-100">
+                <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
+            </div>
+            <div class="card-body" style="color:#FFFFFF">
+                <h3 class="card-title">{{name_pn}}</h3>
+                <p>Temperature {{degree_pn}} C</p>
+                <p>Wind {{wind_pn}}</p>
+                <p>Humidity {{humidity_pn}} %</p>
+                <p>Pressure {{pressure_pn}}</p>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 <script>
     // refresh/redirect after 5 seconds.
