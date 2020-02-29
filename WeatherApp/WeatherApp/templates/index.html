@@ -10,33 +10,123 @@
 </head>
 <body>
     <div class="container-fluid" style="background-color:#393939;">
-        <div>
-            <h1 style="color:#FFFFFF">My Weather App</h1>
+        <div class="p-3">
+            <h1 class="text-center" style="color:#FFFFFF">My Weather App</h1>
         </div>
         <div class="row ">
         <div class="container" style="width: 50%;">
-            <div class="w-25 mh-100">
-                <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
+            <div class="w-25 mh-100 mx-auto">
+                    <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
             </div>
-            <div class="card-body" style="color:#FFFFFF">
-                <h3 class="card-title">{{name_ve}}</h3>
-                <p>Temperature {{degree_ve}} C</p>
-                <p>Wind {{wind_ve}}</p>
-                <p>Humidity {{humidity_ve}} %</p>
-                <p>Pressure {{pressure_ve}}</p>
+            <div class="card-body" style="color:#FFFFFF;">
+
+                <h3 class="card-title text-center p-3">{{name_ve}}</h3>
+
+                <div class="row">
+
+                <div class="col">
+                    <div class="row justify-content-center">
+                         <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/warm.png' %}" style="width:50%;">
+                         </div>
+                        <div class="row align-items-center ">
+                            <p>{{degree_ve}} C</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/wind.png' %}" style="width:50%;">
+                        </div>
+                        <div class="row align-items-center ">
+                            <p>{{wind_ve}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/humidity.png' %}" style="width:50%;">
+                        </div>
+                        <div class="row align-items-center">
+                            <p>{{humidity_ve}} %</p>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col">
+                    <div class="row justify-content-center">
+                         <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/pressure.png' %}" style="width:50%;">
+                         </div>
+                        <div class="row align-items-center">
+                            <p>{{pressure_ve}}</p>
+                         </div>
+                    </div>
+                 </div>
+
             </div>
+
+        </div>
         </div>
 
         <div class="container" style="width: 50%;">
-            <div class="w-25 mh-100">
+            <div class="w-25 mh-100 mx-auto">
                 <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
             </div>
             <div class="card-body" style="color:#FFFFFF">
-                <h3 class="card-title">{{name_pn}}</h3>
-                <p>Temperature {{degree_pn}} C</p>
-                <p>Wind {{wind_pn}}</p>
-                <p>Humidity {{humidity_pn}} %</p>
-                <p>Pressure {{pressure_pn}}</p>
+                <h3 class="card-title text-center p-3">{{name_pn}}</h3>
+
+                 <div class="row">
+
+                <div class="col">
+                    <div class="row justify-content-center">
+                         <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/warm.png' %}" style="width:50%;">
+                         </div>
+                        <div class="row align-items-center ">
+                            <p>{{degree_pn}} C</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/wind.png' %}" style="width:50%;">
+                        </div>
+                        <div class="row align-items-center ">
+                            <p>{{wind_pn}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/humidity.png' %}" style="width:50%;">
+                        </div>
+                        <div class="row align-items-center">
+                            <p>{{humidity_pn}} %</p>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col">
+                    <div class="row justify-content-center">
+                         <div class="row align-items-center justify-content-center">
+                            <img src="{% static 'assets/pressure.png' %}" style="width:50%;">
+                         </div>
+                        <div class="row align-items-center">
+                            <p>{{pressure_pn}}</p>
+                         </div>
+                    </div>
+                 </div>
+
+            </div>
             </div>
         </div>
         </div>

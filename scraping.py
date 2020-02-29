@@ -14,6 +14,7 @@ results_ve = soup.find(id='hero-left-Nowcard-92c6937d-b8c3-4240-b06c-9da9a8b0d22
 nome_ve = soup.find_all('span', class_='today_nowcard-loc-title-wrqpper')
 card_ve = results_ve.find_all('div', class_='today_nowcard-section today_nowcard-condition')
 data_elem_ve = soup.find_all('div', class_='today_nowcard-sidecar component panel')
+icon_elem_ve = soup.find_all('div', class_='dp-details')
 values_ve = []
 
 for name in nome_ve:
@@ -27,12 +28,17 @@ for degree in card_ve:
 for tr in soup.find('div', class_='today_nowcard-sidecar component panel').find_all('tr'):
     values_ve.append(list(tr.stripped_strings))
 
+for meteo_ve in icon_elem_ve:
+    icon_ve = meteo_ve.find('span', class_='today-wx-descrip')
+    print(icon_ve.text.strip())
+
 # PN
 soup = BeautifulSoup(page_pn.content, 'html.parser')
 results_pn = soup.find(id='hero-left-Nowcard-92c6937d-b8c3-4240-b06c-9da9a8b0d22b')
 nome_pn = soup.find_all('span', class_='today_nowcard-loc-title-wrqpper')
 card_pn = results_pn.find_all('div', class_='today_nowcard-section today_nowcard-condition')
 data_elem_pn = soup.find_all('div', class_='today_nowcard-sidecar component panel')
+icon_elem_pn = soup.find_all('div', class_='dp-details')
 values_pn = []
 
 for name in nome_pn:
@@ -45,6 +51,10 @@ for degree in card_pn:
 
 for tr in soup.find('div', class_='today_nowcard-sidecar component panel').find_all('tr'):
     values_pn.append(list(tr.stripped_strings))
+
+for meteo in icon_elem_pn:
+    icon_pn = meteo.find('span', class_='today-wx-descrip')
+    print(icon_pn.text.strip())
 
 
 # Formatting values for display activity
