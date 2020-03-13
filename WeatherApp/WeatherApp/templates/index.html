@@ -16,7 +16,7 @@
         <div class="row ">
         <div class="container" style="width: 50%;">
             <div class="w-25 mh-100 mx-auto">
-                    <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
+                    <img src ="{% static 'assets/' %}{{icon_ve}}.png" class="card-img-top" alt="Weather image">
             </div>
             <div class="card-body" style="color:#FFFFFF;">
 
@@ -27,7 +27,7 @@
                 <div class="col">
                     <div class="row justify-content-center">
                          <div class="row align-items-center justify-content-center">
-                            <img src="{% static 'assets/warm.png' %}" style="width:50%;">
+                            <img src ="{% static 'assets/' %}{{temp_ve}}.png" style="width:50%;">
                          </div>
                         <div class="row align-items-center ">
                             <p>{{degree_ve}} C</p>
@@ -75,7 +75,7 @@
 
         <div class="container" style="width: 50%;">
             <div class="w-25 mh-100 mx-auto">
-                <img src="{% static 'assets/sun.png' %}" class="card-img-top" alt="Weather image">
+                <img src ="{% static 'assets/' %}{{icon_pn}}.png" class="card-img-top" alt="Weather image">
             </div>
             <div class="card-body" style="color:#FFFFFF">
                 <h3 class="card-title text-center p-3">{{name_pn}}</h3>
@@ -85,7 +85,7 @@
                 <div class="col">
                     <div class="row justify-content-center">
                          <div class="row align-items-center justify-content-center">
-                            <img src="{% static 'assets/warm.png' %}" style="width:50%;">
+                            <img src ="{% static 'assets/' %}{{temp_pn}}.png" style="width:50%;">
                          </div>
                         <div class="row align-items-center ">
                             <p>{{degree_pn}} C</p>
@@ -136,6 +136,6 @@
     // refresh/redirect after 5 seconds.
     window.setTimeout(function () {
         location.href = "http://127.0.0.1:8000/weatherapp/";
-    }, 50000);
+    }, 30000);
 </script>
 </html>
