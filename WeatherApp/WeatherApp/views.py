@@ -116,6 +116,16 @@ for meteo_pn in icon_elem_pn:
         icon_value_pn: str = 'fog'
     elif 'Nebbia' in icon_pn:
         icon_value_pn: str = 'fog'
+    elif 'Rovesci' in icon_pn:
+        icon_value_pn: str = 'rain'
+    elif 'Precipitazioni' in icon_pn:
+        icon_value_pn: str = 'rain'
+    elif 'Temporali' in icon_pn:
+        icon_value_pn: str = 'thunder'
+    elif 'Neve' in icon_pn:
+        icon_value_pn: str = 'snow'
+    elif 'Nevicate' in icon_pn:
+        icon_value_pn: str = 'snow'
 
     # Change icon when detecting time
     hour = int(datetime.datetime.now().strftime('%H'))
