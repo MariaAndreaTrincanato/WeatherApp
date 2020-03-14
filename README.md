@@ -1,8 +1,10 @@
 # WeatherApp
- Simple Python app that retrieves and displays the weather
+ Simple Python Django app that retrieves and displays the weather
+ 
+ ![Preview](myweatherapp.png)
 
-### Comandi utili 
-Per creare un nuovo progetto in Django usare: django-admin startproject NomeApp
+### What I've learnt
+ With this project I've learnt how to use Django and how to scrape a web page to find the data I want to display.
 
-Per avviare il server locale di Django, entrare nella cartella WeatherApp e:
-_*python manage.py runserver*_
+
+### NB: All icons are from flaticon.com
