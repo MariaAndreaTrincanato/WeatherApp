@@ -23,9 +23,10 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
- # defining a new URL pattern
-#     # when we will go here our template will render
-    path('weatherapp/', views.index),
+    #path(r'^admin/', admin.site.urls),
+    # defining a new URL pattern
+    # when we will go here our template will render
+    path(r'^weatherapp/', views.index),
+    path('', views.index, name='home')
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
